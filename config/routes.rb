@@ -4,7 +4,8 @@ Rails.application.routes.draw do
   # when you go to localhost:3000/albums then go to the to route album controller and then find the index method which will then tell you to go the the correct view folder
   get "/albums" => "albums#index", as: 'albums'
   # get "/albums/new" => "albums#new", as: 'new_album'
-  # get "/albums/:id" => "albums#show", as: 'album'
+  # this is routes for the specific ID
+  get "/albums/:id" => "albums#show", as: 'album'
   # post "/albums" => "albums#create"
 
 end

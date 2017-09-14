@@ -1,0 +1,11 @@
+<h1>Rock 'n Rails! (album#show)</h1>
+
+<img src="<%= @album.cover_art %>">
+<h1><%= @album.title %></h1>
+<h2>by <%= @album.artist %></h2>
+<p>Year: <%= @album.year %></p>
+<p>Song Count: <%= @album.song_count %></p>
+
+<!--  THIS IS RUBY SAYING GO BACK TO THE MAIN PATH -->
+<%= link_to "Back", albums_path %>
+<a href="/albums/">Back to the main page</a>

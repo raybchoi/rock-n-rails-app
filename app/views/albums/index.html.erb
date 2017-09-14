@@ -1,1 +1,10 @@
 <h1>Rock 'n Rails! (albums#index)</h1>
+
+
+<% @albums.each do |album| %>
+<p>Title: <%= album.title %></p>
+<p>Artist: <%= album.artist %></p>
+<img src="<%= album.cover_art %>">
+<!--  <a href="/albums/<%= album.id %> the alubm.id is the going to the path that changes which helps the route -->
+<a href="/albums/<%= album.id %>">Show page</a>
+<% end %>
